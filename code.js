@@ -2,9 +2,6 @@
 function helloWorld() {
     return "Hello, World!";
 }
-function sayHello(){
-    return ""
-}
 
 function sayHello(name){
     // if (input === "Alex"){
@@ -13,7 +10,11 @@ function sayHello(name){
     //     return "Hello, Pat!";
     // }
     // else return "Hello, Jorge!";
+    if(name === true) {
+        return "Hello, World!"
+    }else
     return "Hello," + name + "!"
+
 }
 
 
