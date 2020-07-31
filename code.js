@@ -10,12 +10,17 @@ function sayHello(name){
     //     return "Hello, Pat!";
     // }
     // else return "Hello, Jorge!";
-    if(name === true) {
-        return "Hello, World!"
+    if(typeof name === "string" && isNaN(name)) {
+        return ("Hello," + name + "!");
     }else
-    return "Hello," + name + "!"
+        return "Hello, World!"
 
 }
+function isFive(input) {
+return parseFloat(input)=== 5;
+}
 
-
+function isEven(input) {
+return input === true;
+}
 
