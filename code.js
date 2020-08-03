@@ -1,26 +1,46 @@
-// helloWorld function 
-function helloWorld() {
-    return "Hello, World!";
-}
+// helloWorld function
+    function helloWorld() {
+      return "Hello, World!";
+    }
 
-function sayHello(name){
-    // if (input === "Alex"){
-    //     return "Hello, Alex!";
-    // } else if (input === "Pat"){
-    //     return "Hello, Pat!";
-    // }
-    // else return "Hello, Jorge!";
+    const sayHello= name =>{
+
     if(typeof name === "string" && isNaN(name)) {
-        return ("Hello," + name + "!");
-    }else
-        return "Hello, World!"
+           return ("Hello," + name + "!");
+     }else
+           return "Hello, World!"
 
-}
-function isFive(input) {
-return parseFloat(input)=== 5;
-}
+    }
+    const isFive = num => {
+      if (num === 5 || num === "5")
+          return true;
+        return false;
 
-function isEven(input) {
-return input === true;
-}
+    }
 
+
+    const isEven = num => {
+        if(typeof num === "boolean")
+           return false;
+
+      const remainder = num % 2;
+
+      if (! isNaN(remainder)){
+          return remainder === 0;
+      }
+
+        return false;
+
+        }
+
+        const isVowel = str =>{
+            const vowels = "aeiou";
+
+            if(typeof str === "string" && str.length === 1){
+                return (vowels.indexOf(str.toLowerCase()) !== -1);
+            }
+            return false;
+        }
+        const add = (num1,num2) =>{
+        return (Number(num1) + Number(num2));
+        }
